@@ -1,5 +1,10 @@
+.hover-opacity:hover{
+    opacity: 0.2;
+}
 
-
+.SuccessStory :hover{
+    color: #f79314;
+}
 
 html{
   font-size: 14px;
@@ -15,19 +20,6 @@ html {
     display: block;
 }
 
-@media screen and (max-width: 767px)
-html {
-    font-size: 15px;
-}
-
-
-head {
-    display: none;
-}
-
-meta {
-    display: none;
-}
 
 
 body{
@@ -45,6 +37,10 @@ body, div, p, ul, ol, li, dl, dt, dd, table, th, td, img, figure, h1, h2, h3, h4
     padding: 0;
 }
 
+
+/*ヘッダー*/
+
+
 .site-header {
     position: absolute;
     z-index: 10;
@@ -55,6 +51,10 @@ body, div, p, ul, ol, li, dl, dt, dd, table, th, td, img, figure, h1, h2, h3, h4
     padding-bottom: 20px;
     width: 100%;
 }
+
+
+
+
 
 header {
     display: block;
@@ -104,43 +104,6 @@ nav {
 
 .header-nav-hamburger {
     display: none;
-}
-
-@media screen and (max-width: 1080px){
-.header-nav-hamburger {
-    cursor: pointer;
-    display: block;
-    position: relative;
-    width: 30px;
-    height: 21px;
-    z-index: 100;
-}
-}
-
-@media screen and (max-width: 1080px){
-.header-nav-hamburger-line:first-child {
-    top: 0;
-}
-}
-
-@media screen and (max-width: 1080px){
-.header-nav-hamburger-line {
-    position: absolute;
-    top: 50%;
-    display: block;
-    width: 100%;
-    height: 3px;
-    background-color: #222;
-    transform: translate(0, -50%);
-    border-radius: 10px;
-    transition: top 0.2s, transform 0.2s, opacity 0.3s;
-}
-}
-
-@media screen and (max-width: 1080px){
-.header-nav-hamburger-line:last-child {
-    top: 100%;
-}
 }
 
 .header-nav .header-nav-list.contents-tidy {
@@ -218,10 +181,113 @@ li {
 }
 
 
+@media screen and (max-width: 1080px){
+.site-header {
+    background-color: #fff;
+    position: fixed;
+  }
+.header-nav-hamburger {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 21px;
+    z-index: 100;
+  }
+.header-nav-hamburger-line:first-child {
+    top: 0;
+  }
+  .header-nav-hamburger-line:last-child {
+    top: 100%;
+}
+  .header-nav-hamburger-line {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #222;
+    transform: translate(0, -50%);
+    border-radius: 10px;
+    transition: top 0.2s, transform 0.2s, opacity 0.3s;
+ }
+ .header-nav .header-nav-list {
+    overflow-y: scroll;
+    position: fixed;
+    top: 60px;
+    left: 100%;
+    width: 100%;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 75px;
+    transition: transform 0.5s;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.8);
+    -webkit-overflow-scrolling: touch;
+　}
+　.header-nav .header-nav-item-outline {
+    margin-right: 0;
+　}
+.header-nav .header-nav-item {
+    padding: 20px 0;
+　}
+.header-nav .header-nav-item > span:first-child {
+    font-size: 16px;
+    letter-spacing: 5px;
+    color: #fff;
+　}
+　.header-nav .header-nav-item > span:last-child {
+    font-size: 12px;
+    margin-top: 10px;
+    color: #f79314;
+    letter-spacing: 2px;
+　}
+　.header-button-outline {
+    margin-top: 20px;
+}
+　.header-button {
+    margin: 0 auto;
+    width: 250px;
+}
+.link-button.menu {
+    height: 60px;
+    font-size: 16px;
+}
+}
+
+@media screen and (max-width: 767px){
+.site-header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+.header-width {
+    max-width: 100%;
+    margin: 0 20px;
+　}
+.header-nav .header-nav-list {
+    top: 52px;
+}
+}
+
 
 main {
     display: block;
 }
+
+@media screen and (max-width: 767px){
+main {
+    padding-top: 52px;
+}
+}
+
+@media screen and (max-width: 1080px){
+main {
+    padding-top: 60px;
+}
+}
+
+
+
 
 .section-top-hero {
     padding-top: 190px;
@@ -230,6 +296,14 @@ main {
     background-size: auto 100%;
     background-position: right 0;
     background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 767px){
+.section-top-hero {
+    padding-top: 258px;
+    padding-bottom: 12px;
+    background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/top-hero-sp.png);
+}
 }
 
 section {
@@ -244,6 +318,9 @@ section {
     margin-right: auto;
     position: relative;
 }
+
+
+
 
 .top-hero-box {
     position: relative;
@@ -271,10 +348,6 @@ h1 {
 
 .top-hero-box .top-hero-text > span {
     color: #f79314;
-}
-
-.top-hero-box >* + * {
-    margin-top: 30px;
 }
 
 p {
@@ -308,7 +381,53 @@ p {
     padding-top: 132px;
 }
 
+@media screen and (max-width: 1024px){
+.section-top-hero .proviso p {
+    background-color: rgba(255, 255, 255, .3);
+    color: #000;
+    padding: 4px;
+ }
+ .top-hero-box .No1-notation {
+    top: -168px;
+    right: 0;
+    left: -28px;
+ }
+}
+
+@media screen and (max-width: 767px){
+.content-width {
+    max-width: none;
+    padding-left: 20px;
+    padding-right: 20px;
+ }
+.top-hero-box {
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+ }
+.top-hero-box .top-hero-text {
+    font-size: 15px;
+    text-shadow: 0 0 10px rgb(255 255 255 / 60%);
+ }
+.top-hero-box .No1-notation {
+    top: -118px;
+    left: -56px;
+ }
+.top-hero-box .No1-notation img {
+    width: 120px;
+    height: 120px;
+ }
+.section-top-hero .proviso {
+    padding-top: 24px;
+    background-color: inherit;
+    color: inherit;
+ }
+}
+
+
+
 /*ポテパンキャンプとは*/
+
 
 .main-section.top-about {
     background-color: #f79314;
@@ -318,10 +437,6 @@ p {
 .banner-for-students {
     width: 100%;
     margin-bottom: 50px;
-}
-
-.banner-for-students--sp {
-    display: none;
 }
 
 .top-about .contents-tidy {
@@ -382,8 +497,46 @@ h2 {
     font-size: 14px;
 }
 
+@media screen and (max-width: 767px){
+.main-section.top-about {
+    padding: 30px 0;
+}
+
+.banner-for-students--pc {
+    display: none;
+}
+.banner-for-students--sp {
+    display: block;
+    margin: 0 0 50px 5px;
+}
+.about-text {
+    width: 100%;
+}
+.about-text h2 {
+    font-size: 26px;
+    text-align: center;
+}
+.about-text h2 > span {
+    font-size: 30px;
+}
+.about-text + .top-about-button {
+    margin-top: 40px;
+}
+}
+
+@media screen and (min-width: 767px){
+.banner-for-students--sp {
+    display: none;
+}
+}
+
+
 
 /*ポテパンキャンプの特徴*/
+
+
+
+
 
 .main-section {
     padding: 100px 0;
@@ -433,8 +586,35 @@ h2 {
     margin-top: 110px;
 }
 
+@media screen and (max-width: 767px){
+.section-main-heading {
+    text-align: center;
+    font-size: 26px !important;
+    line-height: 1.2;
+}
+.section-header h2 > span {
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+.section-sub-heading {
+    font-size: 14px;
+}
+.main-section .section-header + .section-content {
+    margin-top: 50px;
+}
+.desc-list.list-number {
+    margin-top: 90px;
+}
+}
 
    /*豊富な転職実績*/
+   
+.SuccessStory {
+    display: flex;
+    width: 33.3%;
+    margin-bottom: 50px;
+}
+
    
 .desc-list > li {
     background-color: #fcfaf5;
@@ -467,10 +647,6 @@ h2 {
 h3 {
     display: block;
     font-size: 1.17em;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
     font-weight: bold;
 }
 
@@ -489,6 +665,62 @@ h3 {
     font-weight: 900;
     line-height: 1;
 }
+
+@media screen and (max-width: 1080px){
+.SuccessStory {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+}
+
+@media screen and (max-width: 767px){
+.desc-list > li {
+    padding: 30px 20px 20px 20px;
+}   
+.desc-list .list-no {
+    font-size: 30px;
+    height: 80px;
+    margin-top: -70px;
+    width: 80px;
+}
+.desc-list .list-title {
+    font-size: 20px;
+    margin-top: -10px;
+}
+.desc-list .list-text {
+    font-size: 15px;
+    line-height: 2.2;
+}
+.desc-list .list-text span {
+    font-size: 24px;
+}
+}
+
+@media screen and (max-width: 767px){
+.desc-list .example {
+    padding: 20px;
+}
+.SuccessStories {
+    padding-top: 40px !important;
+}
+.SuccessStories__title > h4 {
+    font-size: 16px;
+}
+.desc-list .example-contents {
+    margin: 14px 0 0 0;
+}
+.SuccessStoriesList {
+    flex-direction: column;
+    margin-top: 25px !important;
+}
+.SuccessStory {
+    align-items: center;
+    margin-bottom: 40px;
+    padding-right: 0;
+    width: 100%;
+}
+}
+
 
 .SuccessStories__title {
     display: inline-block;
@@ -510,16 +742,10 @@ h3 {
 
 .SuccessStoriesList__link {
     cursor: pointer;
-    display: contents;
+   display :contents;
 }
 
-.SuccessStory {
-    display: flex;
-    width: 33.3%;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-bottom: 50px;
-}
+
 
 .desc-list .example-contents img {
     width: 60px;
@@ -548,8 +774,17 @@ h3 {
     transform: scale(0.4);
 }
 
+.SuccessStories__title::after {
+    content: '';
+    border-bottom: solid 4px #f79314;
+    display: block;
+    margin-top: 10px;
+}
 
 /*現場が認めるカリキュラム*/
+
+
+
 
 .desc-list > li + li {
     margin-top: 120px;
@@ -565,11 +800,11 @@ h3 {
 .CorporateInterviewCard {
     background-color: #fff;
     border-radius: 10px;
-    display: flex;
     margin-bottom: 25px;
     padding: 30px;
     position: relative;
     text-align: left;
+    display: flex;
 }
 
 .CorporateInterviewCard__left {
@@ -621,8 +856,52 @@ h3 {
     width: 6px;
 }
 
+.CorporateInterviewCard__link :hover{
+    color:#f79314;
+}
+
+@media screen and (max-width: 767px){
+.desc-list > li + li {
+    margin-top: 90px;
+}
+.desc-list > li {
+    padding: 30px 20px 20px 20px;
+}
+.CorporateInterviewList {
+    margin-bottom: 4px !important;
+}
+.CorporateInterviewCard--with-link {
+    padding: 20px 20px 30px;
+}
+.CorporateInterviewCard__left {
+    margin-bottom: 16px;
+}
+.CorporateInterviewCard__left img {
+    width: 100%;
+}
+.CorporateInterviewCard__left span {
+    display: block;
+}
+.CorporateInterviewCard__right {
+    margin: 0;
+}
+.CorporateInterviewCard__link {
+    align-items: center;
+    margin-top: 25px;
+    position: static;
+    text-align: right;
+}
+.CorporateInterviewCard {
+    display: block;
+    margin: 0 auto 25px;
+    padding: 20px;
+}
+}
+
 
 /*現役エンジニアが講師*/
+
+
 
 .engineer-list {
     margin-top: 45px;
@@ -652,7 +931,7 @@ h3 {
     justify-content: center;
 }
 
-.engineer-conpany-logo > img {
+.engineer-company-logo > img {
     width: 100%;
 }
 
@@ -680,10 +959,8 @@ h3 {
     width: 100%;
     position: relative;
     background-color: #f6f6f6;
-    padding: 20px;
     border-radius: 10px;
     margin-top: 20px;
-    text-align: start;
 }
 
 .engineer-text::before {
@@ -696,11 +973,25 @@ h3 {
     border-bottom: 15px solid #f6f6f6;
 }
 
+@media screen and (max-width: 767px){
+.desc-list > li + li {
+    margin-top: 90px;
+}
+.engineer-list {
+    width: 100%;
+    display: flex;
+    margin-left: 0;
+    margin-right: 0;
+}
+}
+
 /*卒業後の紹介企業が多数*/
+
 
 .desc-list .example-company {
     padding: 28px 30px;
 }
+
 
 .desc-list .example-contents.contents-tidy {
     flex-wrap: wrap;
@@ -722,14 +1013,6 @@ h3 {
     width: 25%;
 }
 
-.desc-list .example-contents > li {
-    display: flex;
-    width: 33.3%;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-bottom: 50px;
-}
-
 .desc-list .example-contents-company .img-box {
     align-items: center;
     background-color: #fff;
@@ -746,19 +1029,27 @@ h3 {
     width: auto;
 }
 
-.desc-list .example-contents img {
-    width: 60px;
-    height: 60px;
-}
-
 
 /*サポート体制も充実*/
+
+@media screen and (max-width: 767px){
+.desc-list .example{
+    padding: 20px;
+} 
+.desc-list .example-contents-support > li {
+    margin-left: 0;
+    text-indent: 0;
+}
+}
 
 .desc-list .example {
     background-color: #fff;
     margin-top: 40px;
     border-radius: 20px;
+    padding:30px;
 }
+
+
 
 .desc-list .example-contents-support {
     display: block;
@@ -786,8 +1077,21 @@ h3 {
     text-align: left;
 }
 
+@media screen and (max-width: 767px){
+.desc-list .example-company{
+    padding: 20px;
+}
+.desc-list .example-contents-company > li {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+}
+}
+
 
 /*選べるコース*/
+
+
 
 .main-section.top-potepan {
     position: relative;
@@ -849,7 +1153,6 @@ h3 {
     align-items: center;
 }
 .course-title {
-    width: 30%;
     margin-right: 30px;
     border: solid 3px;
 }
@@ -904,7 +1207,6 @@ h3 {
 }
 
 .course-link {
-    position: absolute;
     right: 20px;
     bottom: -5px;
     font-size: 14px;
@@ -919,8 +1221,92 @@ h3 {
     margin-right: auto;
 }
 
+.course-link::after {
+    content: url(../images/common/chevron-right.jpg);
+    display: inline-block;
+    height: fit-content;
+    margin: auto;
+    transform: scale(0.4);
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    bottom: 10px;
+    right: -14px;
+}
+
+@media screen and (max-width: 767px){
+.main-section.top-potepan .content-width {
+    background: none;
+    padding-top: 0;
+}
+.main-section.top-potepan .section-content {
+    margin-top: 50px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.main-section.top-potepan .course-list {
+    padding: 0 20px;
+}
+.course-media {
+    flex-direction: column;
+    padding: 25px;
+}
+.course-title {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+.course-contents {
+    width: 100%;
+    margin-top: 25px;
+    padding-right: 0;
+}
+.course-contents > div {
+    margin-top: 25px;
+}
+.course-contents > div p:first-of-type {
+    word-break: keep-all;
+}
+.course-link {
+    position: static;
+    text-align: right;
+    margin-top: 25px;
+    padding-right: 20px;
+}
+.course-link::after {
+    right: 0;
+}
+}
+
 
 /*サービスの想い*/
+
+@media screen and (max-width: 1024px){
+.message-title {
+    font-size: 32px;
+    background: -webkit-linear-gradient(0deg, #ff802c, #f79214);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.message-contents {
+    flex-direction: column;
+    position: relative;
+    background-color: #fff;
+    padding: 45px 40px 40px;
+}
+.message-text {
+    padding: 0;
+    margin-right: 0;
+    margin-top: 30px;
+    order: 2;
+}
+.message-thumbnail {
+    order: 1;
+}
+.message-thumbnail > img {
+    width: 100%;
+}
+}
 
 .main-section.top-service, .main-section.top-works {
     background-color: #fcfaf5;
@@ -930,8 +1316,7 @@ h3 {
     display: inline-block;
     font-size: 50px;
     color: #ff802c;
-    background: -webkit-linear-gradient(
-0deg, #ff802c, #f79214);
+    background: -webkit-linear-gradient(0deg, #ff802c, #f79214);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     line-height: 1;
@@ -985,6 +1370,13 @@ h3 {
 
 
 /*受講生の声*/
+
+
+.interview-list li:hover{
+  transform: scale(1.2);
+  transition-duration: 0.3s;
+}
+
 
 
 .interview-list {
@@ -1053,8 +1445,38 @@ h3 {
     line-height: 1.8;
 }
 
+@media screen and (max-width: 1070px){
+.interview-list {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 160px;
+    padding-right: 160px;
+}
+.interview-list > li {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 840px){
+.interview-list {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+}
+
+@media screen and (max-width: 767px){
+.interview-media .interview-media-text {
+    margin-top: 20px;
+}
+}
+
+
 
 /*footer*/
+
 
 
 .site-footer {
@@ -1196,3 +1618,42 @@ address {
     height: auto;
 }
 
+@media screen and (max-width: 767px){
+.site-footer {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+.site-footer-main {
+    display: block;
+    text-align: center;
+}
+.site-footer-main .footer-nav {
+    text-align: left;
+    margin-right: 0;
+    margin-left: 20px;
+}
+.site-footer-main .footer-nav-and-character {
+    margin-top: 30px;
+}
+.site-footer-main .footer-nav {
+    text-align: left;
+    margin-right: 0;
+    margin-left: 20px;
+}
+.site-footer-main .footer-nav-and-character .footer-character {
+    margin: 34px auto;
+}
+.site-footer-main .footer-info {
+    margin-right: 0;
+}
+.site-footer-main * + .footer-info {
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #fff;
+}
+.footer-info .footer-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+}
