@@ -1,37 +1,28 @@
 .hover-opacity:hover{
     opacity: 0.2;
 }
-
 .SuccessStory :hover{
     color: #f79314;
 }
-
 html{
   font-size: 14px;
   font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, sans-serif;
     color: rgb(34, 34, 34);
 }
-
 html {
     -webkit-text-size-adjust: 100%;
 }
-
 html {
     display: block;
 }
-
-
-
 body{
   font-family: 游ゴシック, YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   font-weight: 400;
   display: block;
 }
-
 body {
     -webkit-font-smoothing: antialiased;
 }
-
 body, div, p, ul, ol, li, dl, dt, dd, table, th, td, img, figure, h1, h2, h3, h4, h5, h6, form, select {
     margin: 0;
     padding: 0;
@@ -45,41 +36,30 @@ body, div, p, ul, ol, li, dl, dt, dd, table, th, td, img, figure, h1, h2, h3, h4
     position: absolute;
     z-index: 10;
 }
-
 .site-header {
     padding-top: 20px;
     padding-bottom: 20px;
     width: 100%;
 }
-
-
-
-
-
 header {
     display: block;
 }
-
 .header-width {
     max-width: 100%;
     margin: 0 36px 0 36px;
     position: relative;
 }
-
 div {
     display: block;
 }
 
-
 .hover-opacity {
    transition : opacity 0.2;
 }
-
 a {
     color: #222;
     text-decoration: none;
 }
-
 .header-logo > .header-logo-pc {
     width: auto;
     height: 20px;
@@ -319,9 +299,6 @@ section {
     position: relative;
 }
 
-
-
-
 .top-hero-box {
     position: relative;
     max-width: 337px;
@@ -497,6 +474,12 @@ h2 {
     font-size: 14px;
 }
 
+@media screen and (max-width: 1024px){
+.about-text {
+    width: 100%;
+}
+}
+
 @media screen and (max-width: 767px){
 .main-section.top-about {
     padding: 30px 0;
@@ -614,15 +597,12 @@ h2 {
     width: 33.3%;
     margin-bottom: 50px;
 }
-
-   
 .desc-list > li {
     background-color: #fcfaf5;
     border-radius: 20px;
     text-align: center;
     padding: 40px;
 }
-
 .desc-list .list-no {
     width: 100px;
     height: 100px;
@@ -636,20 +616,17 @@ h2 {
     font-weight: bold;
     font-size: 40px;
 }
-
 .desc-list .list-title {
     font-weight: bold;
     font-size: 30px;
     margin-top: -20px;
     letter-spacing: 1px;
 }
-
 h3 {
     display: block;
     font-size: 1.17em;
     font-weight: bold;
 }
-
 .desc-list .list-text {
     font-size: 16px;
     margin-top: 30px;
@@ -657,7 +634,6 @@ h3 {
     font-weight: 700;
     line-height: 2;
 }
-
 .desc-list .list-text span {
     color: #f79314;
     font-size: 30px;
@@ -665,14 +641,12 @@ h3 {
     font-weight: 900;
     line-height: 1;
 }
-
 @media screen and (max-width: 1080px){
 .SuccessStory {
     padding-left: 10px;
     padding-right: 10px;
 }
 }
-
 @media screen and (max-width: 767px){
 .desc-list > li {
     padding: 30px 20px 20px 20px;
@@ -695,7 +669,6 @@ h3 {
     font-size: 24px;
 }
 }
-
 @media screen and (max-width: 767px){
 .desc-list .example {
     padding: 20px;
@@ -720,12 +693,9 @@ h3 {
     width: 100%;
 }
 }
-
-
 .SuccessStories__title {
     display: inline-block;
 }
-
 .SuccessStories__title > h4 {
     display: inline-block;
     font-weight: bold;
@@ -733,25 +703,19 @@ h3 {
     line-height: 1;
     vertical-align: bottom;
 }
-
 .SuccessStories__title > img {
     height: auto;
     margin-left: 10px;
     width: 34px;
 }
-
 .SuccessStoriesList__link {
     cursor: pointer;
    display :contents;
 }
-
-
-
 .desc-list .example-contents img {
     width: 60px;
     height: 60px;
 }
-
 .SuccessStory__intro {
     color: #333;
     font-size: 16px;
@@ -760,12 +724,10 @@ h3 {
     margin: 10px 16px;
     text-align: left;
 }
-
 .SuccessStory__intro p {
     color: #000;
     font-weight: 700;
 }
-
 .SuccessStory::after {
     content: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/common/chevron-right.jpg);
     display: inline-block;
@@ -773,14 +735,12 @@ h3 {
     margin: auto;
     transform: scale(0.4);
 }
-
 .SuccessStories__title::after {
     content: '';
     border-bottom: solid 4px #f79314;
     display: block;
     margin-top: 10px;
 }
-
 /*現場が認めるカリキュラム*/
 
 
@@ -924,6 +884,10 @@ h3 {
     padding: 20px;
 }
 
+.engineer-conpany-logo > img {
+    width: 100%;
+}
+
 .engineer-conpany-logo {
     height: 100px;
     display: flex;
@@ -988,9 +952,6 @@ h3 {
 /*卒業後の紹介企業が多数*/
 
 
-.desc-list .example-company {
-    padding: 28px 30px;
-}
 
 
 .desc-list .example-contents.contents-tidy {
@@ -1019,7 +980,6 @@ h3 {
     height: 100%;
     display: flex;
     justify-content: center;
-    width: calc(100% + 50px);
 }
 
 .desc-list .example-contents-company img {
@@ -1046,9 +1006,11 @@ h3 {
     background-color: #fff;
     margin-top: 40px;
     border-radius: 20px;
-    padding:30px;
 }
 
+.desc-list .example-company {
+    padding: 28px 30px;
+}
 
 
 .desc-list .example-contents-support {
@@ -1234,6 +1196,10 @@ h3 {
     right: -14px;
 }
 
+.hover-text-color:hover{
+    color: #f79314;
+}
+
 @media screen and (max-width: 767px){
 .main-section.top-potepan .content-width {
     background: none;
@@ -1372,13 +1338,6 @@ h3 {
 /*受講生の声*/
 
 
-.interview-list li:hover{
-  transform: scale(1.2);
-  transition-duration: 0.3s;
-}
-
-
-
 .interview-list {
     margin-left: -20px;
     margin-right: -20px;
@@ -1433,7 +1392,7 @@ h3 {
     font-size: 20px;
 }
 
-.interview-media .interview-thumbnail-titlebox .interview-thumbnail-subtitle > *:last-child {
+.interview-media .interview-thumbnail-titlebox .interview-thumbnail-subtitle > :last-child {
     font-size: 12px;
     margin-left: 15px;
 }
@@ -1443,6 +1402,23 @@ h3 {
     font-weight: bold;
     margin-top: 15px;
     line-height: 1.8;
+}
+
+
+.interview-media:hover{
+    color: #f79314;
+}
+
+.interview-media{
+    overflow:hidden;
+}
+.interview-media-thumbnail:hover{
+    transform:scale(1.2,1.2);
+}
+    
+.interview-media-thumbnail {
+    position: relative;
+    padding-top: 100%;
 }
 
 @media screen and (max-width: 1070px){
@@ -1467,11 +1443,22 @@ h3 {
 }
 }
 
+@media screen and (min-width: 768px){
+.hover-text-color:hover {
+    color: #f79314;
+}
+.hover-text-color {
+    transition: 0.2s;
+}
+}
+
 @media screen and (max-width: 767px){
 .interview-media .interview-media-text {
     margin-top: 20px;
 }
 }
+
+
 
 
 
