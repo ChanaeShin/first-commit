@@ -1,6 +1,4 @@
-.hover-opacity:hover{
-    opacity: 0.2;
-}
+
 .SuccessStory :hover{
     color: #f79314;
 }
@@ -53,9 +51,6 @@ div {
     display: block;
 }
 
-.hover-opacity {
-   transition : opacity 0.2;
-}
 a {
     color: #222;
     text-decoration: none;
@@ -160,7 +155,6 @@ li {
     border: none;
 }
 
-
 @media screen and (max-width: 1080px){
 .site-header {
     background-color: #fff;
@@ -235,6 +229,18 @@ li {
 }
 }
 
+@media screen and (min-width: 768px){
+.hover-opacity:hover {
+    opacity: 0.7;
+}
+}
+
+@media screen and (min-width: 768px){
+.hover-opacity {
+    transition: opacity 0.2s;
+}
+}
+
 @media screen and (max-width: 767px){
 .site-header {
     padding-top: 15px;
@@ -248,7 +254,6 @@ li {
     top: 52px;
 }
 }
-
 
 main {
     display: block;
@@ -265,9 +270,6 @@ main {
     padding-top: 60px;
 }
 }
-
-
-
 
 .section-top-hero {
     padding-top: 190px;
@@ -405,7 +407,6 @@ p {
 
 /*ポテパンキャンプとは*/
 
-
 .main-section.top-about {
     background-color: #f79314;
     padding: 45px 0;
@@ -513,13 +514,7 @@ h2 {
 }
 }
 
-
-
 /*ポテパンキャンプの特徴*/
-
-
-
-
 
 .main-section {
     padding: 100px 0;
@@ -597,12 +592,14 @@ h2 {
     width: 33.3%;
     margin-bottom: 50px;
 }
+
 .desc-list > li {
     background-color: #fcfaf5;
     border-radius: 20px;
     text-align: center;
     padding: 40px;
 }
+
 .desc-list .list-no {
     width: 100px;
     height: 100px;
@@ -616,17 +613,20 @@ h2 {
     font-weight: bold;
     font-size: 40px;
 }
+
 .desc-list .list-title {
     font-weight: bold;
     font-size: 30px;
     margin-top: -20px;
     letter-spacing: 1px;
 }
+
 h3 {
     display: block;
     font-size: 1.17em;
     font-weight: bold;
 }
+
 .desc-list .list-text {
     font-size: 16px;
     margin-top: 30px;
@@ -634,6 +634,7 @@ h3 {
     font-weight: 700;
     line-height: 2;
 }
+
 .desc-list .list-text span {
     color: #f79314;
     font-size: 30px;
@@ -641,12 +642,14 @@ h3 {
     font-weight: 900;
     line-height: 1;
 }
+
 @media screen and (max-width: 1080px){
 .SuccessStory {
     padding-left: 10px;
     padding-right: 10px;
 }
 }
+
 @media screen and (max-width: 767px){
 .desc-list > li {
     padding: 30px 20px 20px 20px;
@@ -669,6 +672,7 @@ h3 {
     font-size: 24px;
 }
 }
+
 @media screen and (max-width: 767px){
 .desc-list .example {
     padding: 20px;
@@ -693,6 +697,7 @@ h3 {
     width: 100%;
 }
 }
+
 .SuccessStories__title {
     display: inline-block;
 }
@@ -741,9 +746,8 @@ h3 {
     display: block;
     margin-top: 10px;
 }
+
 /*現場が認めるカリキュラム*/
-
-
 
 
 .desc-list > li + li {
@@ -861,8 +865,6 @@ h3 {
 
 /*現役エンジニアが講師*/
 
-
-
 .engineer-list {
     margin-top: 45px;
     margin-left: -15px;
@@ -951,15 +953,11 @@ h3 {
 
 /*卒業後の紹介企業が多数*/
 
-
-
-
 .desc-list .example-contents.contents-tidy {
     flex-wrap: wrap;
 }
 
 .desc-list .example-contents-company {
-    justify-content: start;
     margin: 0;
 }
 
@@ -1053,8 +1051,6 @@ h3 {
 
 /*選べるコース*/
 
-
-
 .main-section.top-potepan {
     position: relative;
     overflow: hidden;
@@ -1067,10 +1063,6 @@ h3 {
     background-repeat: no-repeat;
     background-position: calc(100% - 50px) top;
     padding-top: 35px;
-}
-.main-section.top-potepan > * {
-    position: relative;
-    z-index: 1;
 }
 
 .section-header h2 > span {
@@ -1191,7 +1183,6 @@ h3 {
     transform: scale(0.4);
     position: absolute;
     width: 8px;
-    height: 8px;
     bottom: 10px;
     right: -14px;
 }
@@ -1412,9 +1403,6 @@ h3 {
 .interview-media{
     overflow:hidden;
 }
-.interview-media-thumbnail:hover{
-    transform:scale(1.2,1.2);
-}
     
 .interview-media-thumbnail {
     position: relative;
@@ -1452,19 +1440,25 @@ h3 {
 }
 }
 
+@media screen and (min-width: 768px){
+a:hover .hover-scale {
+    transform: scale(1.1);
+}
+}
+
+@media screen and (min-width: 768px){
+.hover-scale {
+    transition: transform 0.2s;
+}
+}
+
 @media screen and (max-width: 767px){
 .interview-media .interview-media-text {
     margin-top: 20px;
 }
 }
 
-
-
-
-
 /*footer*/
-
-
 
 .site-footer {
     padding-top: 80px;
